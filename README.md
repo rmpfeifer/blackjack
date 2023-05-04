@@ -1,1 +1,1 @@
-# blackjack
+Online blackjack! For the final for my programming II class, I chose to make blackjack! As this was a javascript class, nearly everything is controlled with javascript. The html is mostly just there to explain the rules, provide the canvas for javascript to draw on, and provide overall structure.
