@@ -1,0 +1,181 @@
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    background-color: #d8c894;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.Dcard {
+    width: 100px;
+    height: 140px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px black solid;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.Pcard {
+    width: 150px;
+    height: 210px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px black solid;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+.title {
+    font-family: 'Oleo Script', cursive;
+    font-size: 60px;
+    padding:0%;
+    margin: 0%;
+    
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.subtitle {
+    font-family: 'Oleo Script', cursive;
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titlecont {
+    display: flex;
+    width: 100%;
+    min-width: 100%;
+    border-bottom: 3px double;
+    align-items: stretch;
+}
+
+#rules {
+    font-family: 'Oleo Script', cursive;
+    font-size: large;
+    border: 2px dashed green;
+    border-top: none;
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+#rules p {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: 0%;
+    text-align: center;
+    width: 80%;
+}
+
+#continue {
+    margin: 0 auto;
+}
+
+#score {
+    align-self: flex-start;
+    font-family: 'Oleo Script', cursive;
+    font-size: larger;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+#overlaytext{
+    font-family: 'Oleo Script', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    color: rgb(222, 222, 222);
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#dealerArea {
+    height: 200px;
+    width: fit-content;
+    margin-left: 16%;
+}
+#playerArea {
+    height: 270px;
+  width: fit-content;
+}
+
+legend {
+    font-family: 'Oleo Script', cursive;
+    font-size: xx-large;
+}
+fieldset {
+    background-color: #0eeb1d0f;
+    display: flex;
+  max-width: 100%;
+}
+
+
+
+canvas {
+    width: 100%;
+    height: 100%;
+   background-color: none;
+   background: none;
+}
+
+#hit {
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    background-color: rgba(189, 164, 164, 0.491);
+    margin-right: 18%;
+    align-self: flex-start;
+    border: 3px solid black;
+    border-style: double;
+}
+#stand {
+    width: 40%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Oleo Script', cursive;
+    font-size: 70px;
+    background-color: rgba(189, 164, 164, 0.468);
+    border: 3px solid black;
+    border-style: double;
+}

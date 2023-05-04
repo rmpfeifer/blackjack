@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Blackjack project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="body">
+    <div id="overlay" onclick="reset()">
+        <div id="overlaytext">Default overlay text, if it is here something is wrong</div>
+      </div>
+    <div class="titlecont">
+        <p id="score">0 hands won.<br>0 hands lost.</p>
+        <h1 class="title"> Blackjack</h1>
+        <button onclick="window.location.href='index.html';" style="align-self: flex-end; margin-bottom: 50px; float: right;">Rules</button>
+    </div>
+
+    <fieldset id="dealerArea">
+        <legend>Dealer's Cards</legend>
+        <div class="Dcard" id="dc1"><canvas id="dcc1" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc2"><canvas id="dcc2" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc3"><canvas id="dcc3" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc4"><canvas id="dcc4" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc5"><canvas id="dcc5" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc6"><canvas id="dcc6" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc7"><canvas id="dcc7" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc8"><canvas id="dcc8" height=" 140px" width="100px"></canvas></div>
+        <div class="Dcard" id="dc9"><canvas id="dcc9" height=" 140px" width="100px"></canvas></div>
+
+    </fieldset>
+    <fieldset id="playerArea">
+        <legend>Your Cards</legend>
+        <div class="Pcard" id="pc1"><canvas id="pcc1" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc2"><canvas id="pcc2" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc3"><canvas id="pcc3" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc4"><canvas id="pcc4" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc5"><canvas id="pcc5" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc6"><canvas id="pcc6" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc7"><canvas id="pcc7" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc8"><canvas id="pcc8" height=" 210px" width="150px"></canvas></div>
+        <div class="Pcard" id="pc9"><canvas id="pcc9" height=" 210px" width="150px"></canvas></div>
+
+    </fieldset>
+    <div style="display: flex; width: 100%;">
+    <div id="hit" onmousedown="hit()">Hit</div>
+    <div id="stand" onmousedown="stand()">Stand</div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
